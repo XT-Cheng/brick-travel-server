@@ -12,7 +12,7 @@ export class AuthRoute {
     console.log("Auth route create");
 
     router.post(
-      "/auth/login",
+      "/passport/login",
       asyncMiddleware(
         async (req: Request, res: Response, next: NextFunction) => {
           AuthRoute.login(req, res, next);
